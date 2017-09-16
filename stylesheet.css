@@ -1,0 +1,144 @@
+body{
+	width: 1150px;
+	font-family: 	Helvetica, Arial, sans-serif;
+	margin-right: auto;
+	margin-left: auto;
+}
+#home{
+	background-image:url("Spash_02.png");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+}
+#container{
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#container h1{
+	text-align: center;
+	margin-top: 80px;
+}
+/*link selection*/
+#head_container{
+	background-color: #b0b0b0;/*#e0e0e0*/
+	margin: -10px;
+	text-align: right;
+}
+#head_container ul{
+	display: 							inline-block;
+	list-style-type: 					none;
+	font-size: small;
+}
+
+#head_container ul li{
+	display: 							inline;
+	margin: 							0px;
+}
+
+#head_container ul li a{
+	text-decoration:					none;
+	font-size: 							115%;
+	color: 								black;
+	padding-top: 						10px;
+	padding-bottom: 					13px;
+	padding-left: 						10px;
+	padding-right: 						10px;
+}
+
+.selected{
+	background-color: white;
+}
+
+#title_all_pages{
+	float:left;
+	margin-top: -41px;
+	padding:5px;
+	background-color:black;
+}
+
+#title_all_pages h2{
+	color: white;
+	margin:10px;
+}
+
+/*HK title info*/
+#hk_title{
+	color: black;
+	text-align: center;
+	font-size: 200%;
+	margin-bottom:0px;
+}
+
+#inside {
+	text-align: center;
+	margin-top: -50px;
+}
+#inside p{
+	font-size: 50%;
+}
+
+/*teen table*/
+#tableinformation{
+	width: 810px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+
+}
+
+#tableinformation table{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+#tableinformation td, th{
+	font-size: 115%;
+	border: none;
+	padding: 5px 25px 5px 25px;
+}
+#tableinformation table caption{
+	font-size: 115%;
+}
+/*end teen table*/
+
+/*content rules*/
+.content_h2{
+	text-decoration: underline;
+}
+.list_item{
+	margin: 5px;
+}
+
+.center_element{
+	text-align: center;
+}
+
+#strongtest{
+	color: red;
+}
+/*end content rules*/
+
+/*language box*/
+#languages{
+	width: 200px;
+	border: solid 2px;
+	border-radius: 5px;
+	background-color: #a7cece;;
+	text-align: center;
+	float: right;
+	margin: 10px;
+}
+#languages p span{
+	text-decoration: underline;
+	margin: 10px;
+}
+
+#map_canvas{
+	width: 500px;
+	height: 400px;
+	margin: 20px;
+}
