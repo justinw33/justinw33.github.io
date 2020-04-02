@@ -4,6 +4,11 @@ body{
 	margin-right: auto;
 	margin-left: auto;
 }
+#alert {
+	color: 								red;
+	border: solid 5px;
+}
+
 #home{
 	background-image:url("Spash_02.png");
             background-size: cover;
