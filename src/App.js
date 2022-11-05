@@ -1,24 +1,56 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import {Container} from 'react-bootstrap'
+import Landing from './screens/Landing';
+import TeenLessons  from './screens/TeenLessons'
+import AdultLessons  from './screens/AdultLessons'
+import Contact from './screens/Contact'
+import Testing from './screens/Testing'
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+
+// function App() {
+  
+//   return (
+
+//     <Router>
+//       <Header />
+//         <main className='py-3'>
+//         <Container>
+//           <Routes>
+//             <Route path="/" element={<Landing />}></Route>
+//             <Route path="/adultlessons" element={<AdultLessons />}></Route>
+//             <Route path="/teenlessons" element={<TeenLessons/>}></Route>
+//             <Route path="/contact" element={<Contact />}></Route>
+//             <Route path="/testing" element={<Testing />}></Route>
+//           </Routes>
+//          </Container>
+//         </main>
+//       <Footer />
+//     </Router>
+//   );
+// }
+
+// export default App;
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Router>
+      <Header />
+        <main className='py-3'>
+        <Container>
+            <Route path='/' component={Landing} exact/>
+            <Route path="/adultlessons" component={AdultLessons} exact/>
+            <Route path="/teenlessons" component={TeenLessons} exact/>
+            <Route path="/contact" component={Contact} exact/>
+            <Route path="/testing" component={Testing} exact/>
+         </Container>
+        </main>
+      <Footer />
+    </Router>
   );
 }
 
